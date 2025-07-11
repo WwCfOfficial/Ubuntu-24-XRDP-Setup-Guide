@@ -102,6 +102,13 @@ If UFW is active:
 sudo ufw allow 3389/tcp
 ```
 
+Then reload or enable UFW (if not already):
+
+```bash
+sudo ufw enable       # Enable firewall (if not already)
+sudo ufw status       # Confirm 3389 is allowed
+```
+
 ---
 
 ## ✅ Step 9: Connect to XRDP from Your PC
