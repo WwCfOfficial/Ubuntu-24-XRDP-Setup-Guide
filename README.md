@@ -99,7 +99,9 @@ sudo systemctl status xrdp
 If UFW is active:
 
 ```bash
+sudo ufw allow 22/tcp
 sudo ufw allow 3389/tcp
+
 ```
 
 Then reload or enable UFW (if not already):
@@ -107,6 +109,14 @@ Then reload or enable UFW (if not already):
 ```bash
 sudo ufw enable       # Enable firewall (if not already)
 sudo ufw status       # Confirm 3389 is allowed
+```
+```bash
+sudo ufw reload       # reload
+```
+
+Reboot the VPS:
+```bash
+sudo reboot
 ```
 
 ---
@@ -120,7 +130,7 @@ sudo ufw status       # Confirm 3389 is allowed
 
 ---
 
-## 🔁 (Optional) Reboot VPS
+## 🔁 (Optional) Reboot VPS but if do it's good
 
 ```bash
 sudo reboot
